@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
 defaults:
   run:
-    shell: bash
+    shell: zsh
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-10.14
     steps:
     - uses: actions/checkout@v2
     - name: Setting the environment up.
